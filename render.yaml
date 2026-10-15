@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: bluff-club
+    runtime: node
+    plan: free
+    buildCommand: echo "No dependencies to install"
+    startCommand: npm start
+    healthCheckPath: /api/status
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: DATA_DIR
+        value: /tmp/bluff-club

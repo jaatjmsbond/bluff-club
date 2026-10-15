@@ -1,0 +1,13 @@
+{
+  "name": "bluff-club",
+  "version": "3.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.cjs",
+    "test": "node --test test.cjs",
+    "build:play": "node scripts/build-play.cjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
